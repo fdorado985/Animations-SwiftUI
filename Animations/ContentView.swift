@@ -20,8 +20,8 @@ struct ContentView: View {
     .clipShape(Circle())
     .scaleEffect(animationAmount)
     .animation(
-      Animation.easeInOut(duration: 2)
-        .delay(1)
+      Animation.easeInOut(duration: 1)
+        .repeatCount(3, autoreverses: true)
     )
   }
 }
