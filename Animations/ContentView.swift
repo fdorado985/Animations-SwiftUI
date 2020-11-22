@@ -13,7 +13,9 @@ struct ContentView: View {
   var body: some View {
     VStack {
       Button("Tap Me") {
-        self.isShowingRed.toggle()
+        withAnimation {
+          self.isShowingRed.toggle()
+        }
       }
 
       if isShowingRed {
