@@ -17,6 +17,7 @@ struct ContentView: View {
     .frame(width: 200, height: 200)
     .background(enabled ? Color.blue : Color.red)
     .foregroundColor(.white)
+    .clipShape(RoundedRectangle(cornerRadius: enabled ? 60 : 0))
     .animation(.default)
   }
 }
