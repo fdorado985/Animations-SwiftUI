@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+  @State private var isShowingRed = false
+
   var body: some View {
     VStack {
       Button("Tap Me") {
-        // do nothing
+        self.isShowingRed.toggle()
       }
 
-      Rectangle()
-        .fill(Color.red)
-        .frame(width: 200, height: 200)
+      if isShowingRed {
+        Rectangle()
+          .fill(Color.red)
+          .frame(width: 200, height: 200)
+      }
     }
   }
 }
