@@ -16,9 +16,10 @@ struct ContentView: View {
     }
     .frame(width: 200, height: 200)
     .background(enabled ? Color.blue : Color.red)
+    .animation(nil)
     .foregroundColor(.white)
     .clipShape(RoundedRectangle(cornerRadius: enabled ? 60 : 0))
-    .animation(.default)
+    .animation(.interpolatingSpring(stiffness: 10, damping: 1))
   }
 }
 
