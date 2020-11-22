@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-  @State private var enabled = false
+  @State private var dragAmount = CGSize.zero
 
   var body: some View {
     LinearGradient(
@@ -20,6 +20,7 @@ struct ContentView: View {
     .clipShape(
       RoundedRectangle(cornerRadius: 10)
     )
+    .offset(dragAmount)
   }
 }
 
