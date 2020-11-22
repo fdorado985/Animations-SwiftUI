@@ -26,6 +26,7 @@ struct ContentView: View {
         .onChanged { self.dragAmount = $0.translation }
         .onEnded { _ in self.dragAmount = .zero }
     )
+    .animation(.spring())
   }
 }
 
