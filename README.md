@@ -5,6 +5,8 @@
 
 Spruce up your UI with springs, bounces, and more
 
+This project has different kind of animations, you can be able to look at them, using the diff on this repository.
+
 ---
 
 **MIT License**
